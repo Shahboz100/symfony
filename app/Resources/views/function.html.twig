@@ -1,0 +1,3 @@
+{% macro input(link) %}
+    <img src="{{ img|default(asset(link)) }} "/>
+{% endmacro %}

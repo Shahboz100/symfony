@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+{% block links %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/register.css') }}">
+{% endblock %}
+{% block content %}
+    <div class="container registerForm">
+        <div class="row justify-content-md-center">
+            <div class="col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12">
+
+                {{ form_start(form, { 'action': path('blog_register'), 'method': 'POST'}) }}
+                {{ form_errors(form) }}
+                {{ form_row(form.surname,{'label':'Фамилия'}) }}
+                {{ form_row(form.name,{'label':'Имя'}) }}
+                {{ form_row(form.password,{'label':'Пароль'}) }}
+                {{ form_row(form.password_confirm,{'label':'Подтверждение пароля'}) }}
+                {{ form_row(form.email,{'label':'Элетронная почта'}) }}
+                {{ form_rest(form) }}
+                <input type="submit" value="Зарегистрироваться" class="regBtn btn btn-outline-success margin-frame" />
+                {{ form_end(form) }}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

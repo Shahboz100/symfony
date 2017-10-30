@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% block title %}
+        <title>
+            Нейродом
+        </title>
+    {% endblock %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    {% block links %}
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    {% endblock %}
+</head>
+<body>
+{% block header %}
+    {% include 'navbar.html.twig' %}
+{% endblock %}
+{% block content %}
+    {% include 'content.html.twig' %}
+{% endblock %}
+{% block footer %}
+    {% include 'footer.html.twig' %}
+    <!-- Modal -->
+    {% include 'modal.html.twig' %}
+{% endblock %}
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+{% block javascripts %}
+    {% include 'links.html.twig' %}
+{% endblock %}
+</body>
+</html>

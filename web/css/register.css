@@ -1,0 +1,11 @@
+.registerForm {
+    background-color: inherit;
+}
+.regBtn {
+    float: right;
+}
+@media all and (max-width: 720px){
+    .registerForm{
+        margin-top: 70px;
+    }
+}

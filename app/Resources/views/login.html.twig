@@ -1,0 +1,6 @@
+{{ form_start(form_login,{'action':path("homepage"),'method':'POST'}) }}
+{{ form_errors(form_login) }}
+{{ form_row(form_login.login,{'label':'Логин'}) }}
+{{ form_row(form_login.password,{'label':'Пароль'}) }}
+{{ form_rest(form_login) }}
+

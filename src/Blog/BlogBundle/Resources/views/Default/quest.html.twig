@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+{%block links %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('css/quest.css') }}">
+{% endblock %}
+{% block title %}
+    <title>
+        Гостям!
+    </title>
+{% endblock %}
+{% block content %}
+    <div class="container content">
+        <div class="row">
+            {% if number!=null %}
+                Счастливое число:{{ number }}
+            {% else %}
+                Число отсутствует!
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}
+
+

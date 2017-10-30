@@ -1,0 +1,35 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: shahb
+ * Date: 05.10.2017
+ * Time: 13:16
+ */
+
+namespace Blog\BlogBundle\Entity;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * Class User
+ * @ORM\Entity
+ * @package Blog\BlogBundle\Entity
+ *@ORM\Table(name="user")
+*/
+class User
+{
+    /**
+     * @ORM\Column(type="integer")
+     * @ORM\Id
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    private $id;
+    /**
+     * @ORM\Column(type="string", length=100)
+     */
+    private $login;
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $password;
+
+}
