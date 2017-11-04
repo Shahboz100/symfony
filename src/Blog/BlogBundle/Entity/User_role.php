@@ -24,7 +24,7 @@ class User_role
     private $id;
 
     /**
-     * @ORM\OneToMany(targetEntity="Blog\BlogBundle\Entity\Roles", mappedBy="")
+     * @ORM\OneToMany(targetEntity="Blog\BlogBundle\Entity\Roles", mappedBy="User_role")
      */
     private $id_role;
 
