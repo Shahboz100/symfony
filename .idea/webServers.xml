@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="30f6d34d-9870-4146-9888-2060dacb9477" name="tlcex" url="http://ovz1.j685148.z2yr1.vps.myjino.ru">
+        <fileTransfer host="ovz1.j685148.z2yr1.vps.myjino.ru" port="49302" rootFolder="/var/www" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="49302" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

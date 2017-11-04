@@ -1,19 +1,5 @@
-homepage:
+home:
     path:     /
-    defaults: { _controller: BlogBundle:Default:index }
-blog_quest:
-    path: /quest
-    defaults: {_controller: BlogBundle:Quest:quest}
-    methods: GET
-    requirements:
-          register: '\d'
-blog_lucky:
-    path: /lucky/number
-    defaults: {_controller: BlogBundle:Quest:quest}
-blog_register:
-    path: /register
-    defaults: {_controller: BlogBundle:Register:register}
-login :
-    path: /login
-    defaults: {_controller:BlogBundle:Security:login}
+    defaults: { _controller: BlogBundle:Home:home }
+
 

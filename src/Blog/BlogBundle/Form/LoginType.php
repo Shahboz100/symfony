@@ -9,6 +9,7 @@
 namespace Blog\BlogBundle\Form;
 
 
+use Blog\BlogBundle\Entity\Login;
 use Blog\BlogBundle\Entity\User;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
@@ -26,7 +27,7 @@ class LoginType extends AbstractType
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults(array(
-            'data_class'=>User::class,
+            'data_class'=>Login::class,
         ));
     }
     public function getBlockPrefix()
